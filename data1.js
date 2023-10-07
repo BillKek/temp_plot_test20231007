@@ -5,4 +5,3 @@ const data = [
     type: 'scatter'
   }
 ];
-export {data};
