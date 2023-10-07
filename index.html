@@ -20,21 +20,25 @@ var data = [
   }
 ];
 
-
+        // https://stackoverflow.com/questions/74687902/how-to-make-plotly-js-dynamically-use-the-full-height-width-of-a-div-without
 var layout = {
-  autosize: false,
-  width: 1920,
-  height: 1080,
-  margin: {
-    l: 5,
-    r: 5,
-    b: 10,
-    t: 10,
-    pad: 4
-  },
-  paper_bgcolor: '#7f7f7f',
-  plot_bgcolor: '#c7c7c7'
-};    
+    title: 'Temperature',
+    autosize: true,
+    sliders: [{
+        pad: {t: 5},
+        len: 1,
+        x: 0,
+        currentvalue: {
+            xanchor: 'right',
+            prefix: 'i: ',
+            font: {
+                color: '#888',
+                size: 20
+            }
+        },
+        steps: steps
+    }]
+};
         
         
 
