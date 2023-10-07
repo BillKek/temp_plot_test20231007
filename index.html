@@ -26,22 +26,12 @@ var layout = {
 autosize: true
 };
 
-let loaded=0;
 let url = 'https://raw.githubusercontent.com/BillKek/temp_plot_test20231007/main/1.json';
-let response = await fetch(url).then((res) => {
-      if (res.ok) {
-          // file is present at URL
-		let datach = await response.json(); // читаем ответ в формате JSON
-	      data = datach;
-	      loaded = 1;
-      } else {
-          // file is not present at URL
-      }
-    });
+let response = fetch(url);
+let datach = response.json(); // читаем ответ в формате 
+data = datach;
 	        
-
-if (loaded)
-Plotly.newPlot('myDiv', data,layout);     
+Plotly.newPlot('myDiv', data, layout);     
      
     </script>
 </body>
