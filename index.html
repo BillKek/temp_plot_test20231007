@@ -19,19 +19,17 @@
 
 
     <script>
-var data = [
-];
+
+import { data } from "/data1.js";
 
 var layout = {
 autosize: true
 };
+        
+        
 
-let url = 'https://raw.githubusercontent.com/BillKek/temp_plot_test20231007/main/1.json';
-let response = fetch(url);
-let datach = response.json(); // читаем ответ в формате 
-data = datach;
-	        
-Plotly.newPlot('myDiv', data, layout);     
+
+Plotly.newPlot('myDiv', data,layout);     
      
     </script>
 </body>
@@ -40,4 +38,3 @@ Plotly.newPlot('myDiv', data, layout);
 
 </html>
   
-
