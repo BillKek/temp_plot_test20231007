@@ -1,3 +1,11 @@
+var data = [
+  {
+    x: [],
+    y: [],
+    type: 'scatter'
+  }
+];
+
 {
 const dataadd = [
   {
